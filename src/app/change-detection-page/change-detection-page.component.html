@@ -1,0 +1,8 @@
+<md-tab-group [(selectedIndex)]="selectedIndex">
+  <md-tab label="Default">
+    <app-change-detection *ngIf="selectedIndex === 0" [childs]="[[[[], []], [[], []]], [[[], []], [[], []]]]"></app-change-detection>
+  </md-tab>
+  <md-tab label="On Push">
+    <app-change-detection-on-push *ngIf="selectedIndex === 1" [childs]="[[[[], []], [[], []]], [[[], []], [[], []]]]"></app-change-detection-on-push>
+  </md-tab>
+</md-tab-group>

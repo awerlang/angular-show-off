@@ -5,10 +5,15 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { ChangeDetectionComponent, ChangeDetectionOnPushComponent } from './change-detection/change-detection.component';
+import { ChangeDetectionPageComponent } from './change-detection-page/change-detection-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChangeDetectionComponent,
+    ChangeDetectionOnPushComponent,
+    ChangeDetectionPageComponent
   ],
   imports: [
     BrowserModule,
