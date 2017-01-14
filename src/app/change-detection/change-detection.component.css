@@ -10,11 +10,12 @@ app-root > :host {
 }
 
 .box {
-    width: 100px;
-    height: 80px;
+    width: 90px;
+    height: 70px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     cursor: default;
 
     font-size: 44px;
