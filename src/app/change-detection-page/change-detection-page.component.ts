@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './change-detection-page.component.html',
   styleUrls: ['./change-detection-page.component.css']
 })
-export class ChangeDetectionPageComponent{
+export class ChangeDetectionPageComponent {
 
   selectedIndex: number = 0;
 }

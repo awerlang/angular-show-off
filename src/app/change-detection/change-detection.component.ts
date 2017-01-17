@@ -1,4 +1,6 @@
-import { Component, OnInit, DoCheck, Input, Output, EventEmitter, ViewChild, ElementRef, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component, DoCheck, OnDestroy, Input, Output, EventEmitter, ViewChild, ElementRef, ViewEncapsulation, ChangeDetectionStrategy
+} from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/debounceTime';
 
@@ -38,11 +40,12 @@ function clearElements() {
   `,
   styleUrls: ['./change-detection.component.css'],
 })
-export class ChangeDetectionComponent implements DoCheck {
+export class ChangeDetectionComponent implements DoCheck, OnDestroy {
 
   @Input() childs: any[];
   cleanup = new Subject();
   id = ++counter;
+  @ViewChild('el') el: ElementRef;
 
   constructor() {
   }
@@ -65,8 +68,6 @@ export class ChangeDetectionComponent implements DoCheck {
       inOrderCheck.push(this.el.nativeElement);
     }
   }
-
-  @ViewChild('el') el: ElementRef;
 
 }
 
