@@ -7,13 +7,17 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { ChangeDetectionComponent, ChangeDetectionOnPushComponent } from './change-detection/change-detection.component';
 import { ChangeDetectionPageComponent } from './change-detection-page/change-detection-page.component';
+import { ZonesComponent } from './zones/zones.component';
+import { ZonesPageComponent } from './zones-page/zones-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChangeDetectionComponent,
     ChangeDetectionOnPushComponent,
-    ChangeDetectionPageComponent
+    ChangeDetectionPageComponent,
+    ZonesComponent,
+    ZonesPageComponent
   ],
   imports: [
     BrowserModule,

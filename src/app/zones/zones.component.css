@@ -1,0 +1,23 @@
+.spacing {
+    height: 100px;
+}
+
+md-grid-list {
+    display: inline-block;
+    width: 400px;
+    margin-left: 100px;
+}
+
+md-card {
+    margin: 8px;
+    background: none;
+}
+
+md-card md-card {
+    background: white;
+}
+
+.actions {
+    display: inline-block;
+    vertical-align: top;
+}
